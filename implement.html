@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Khách Hàng</title>
+</head>
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: linear-gradient(rgb(151, 243, 229), rgb(26, 144, 187) );
+    }
+   
+    h1{
+        text-align: center;
+    }
+    h2 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    form {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        
+        position: relative; right: 180px; 
+        
+    }
+
+    input[type="text"] {
+        width: 500px;
+        padding: 5px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        text-align: center;
+    }
+</style>
+
+
+<body>
+    <h1><b style="color: red;">Quản lý Khách Hàng</b></h1>
+
+    <!-- Form for Adding a Customer -->
+    <h2 >Thêm Khách hàng</h2>
+    <form id="addCustomerForm">
+        <label><b>Tên Khách hàng:</b></label>
+        <input  type="text">
+        <label><b>Mã Khách hàng:</b></label>
+        <input style="position: relative; left: 37px;" type="text" >
+        <button style="position: relative; left: 37px;">Thêm</button>
+    </form>
+
+    <!-- Form for Editing a Customer -->
+    <h2>Sửa thông tin Khách hàng</h2>
+    <form id="editCustomerForm">
+        <label><b>Mã Khách hàng:</b></label>
+        <input type="text" >
+        <label><b style="position: relative; right: 30px;">Tên mới:</b></label>
+        <input style="position: relative; left: 37px;" type="text" >
+        <button  style="position: relative; left: 37px;">Sửa</button>
+    </form>
+
+    <!-- Form for Deleting a Customer -->
+    <h2>Xóa Khách hàng</h2>
+    <form id="deleteCustomerForm">
+        <label><b>Mã Khách hàng:</b></label>
+        <input style="position: relative; left: 37px;" type="text" >
+        <button style="position: relative; left: 37px;" >Xóa </button>
+    </form>
+
+    <!-- Form for Searching Customers -->
+    <h2>Tìm kiếm Khách hàng</h2>
+    <form id="searchCustomerForm">
+        <label><b>Mã Khách hàng:</b></label>
+        <input style="position: relative; left: 50px;" type="text" >
+        <button style="position: relative; left: 50px;">Tìm kiếm</button>
+    </form>
+
+   
+</body>
+</html>
