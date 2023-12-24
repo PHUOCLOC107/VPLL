@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F-Pattern Layout</title>
+  <style>
+    /* CSS để thiết lập F-Pattern layout */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f4f4f4;
+      padding: 10px 0;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    section {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    aside {
+      flex: 0.3;
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Implementation</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Page</a></li>
+      <li><a href="#">Sign In</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Am Thuc</h2>
+      <p>Ẩm thực (chữ Hán: 飲食, nghĩa đen là ăn uống với ẩm nghĩa là uống và thực nghĩa là ăn) là một hệ thống đặc biệt về quan điểm truyền thống và thực hành nấu ăn, nghệ thuật bếp núc, nghệ thuật chế biến thức ăn, thường gắn liền với một nền văn hóa cụ thể. Nó thường được đặt tên theo vùng hoặc nền văn hóa hiện hành.</p>
+      <h2>Lich Su</h2>
+      <p>Ngay từ khi những dấu chân đầu tiên của con người in dấu trên Trái Đất, ngay từ thời kì bình minh của nhân loại, việc ăn uống đã được coi như là một nhu cầu cần thiết để duy trì sự sống của sinh vật sống nói chung và con người nói riêng. </p>
+      <h2>Mot Vai Mon An</h2>
+    <p>Canh Kho Qua</p>
+    <p>Thit Kho Tau</p>
+    <p>Bun Bo Hue</p>
+    <p>Pho</p>
+    <p>...</p>
+    </section>
+
+    <aside>
+      <h2>Hinh Anh Minh Hoa</h2>
+      <img src="images/Phở_bò,_Cầu_Giấy,_Hà_Nội.jpg" alt="" height="200px" width="300px">
+      
+    </aside>
+  </main>
+
+  <footer>
+    <p>Footer - Copyright © 2023</p>
+  </footer>
+</body>
+</html>
